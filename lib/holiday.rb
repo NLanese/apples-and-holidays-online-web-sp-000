@@ -139,11 +139,11 @@ def all_holidays_with_bbq(holiday_hash)
       end
       if (passer)
         holidayArray = holiday_hash[season].keys
-        return holidayArray[i]
+        #return holidayArray[i]
         rArray << holidayArray[i]
       end
       i = i + 1
     end
   end
-#return rArray
+return rArray
 end
