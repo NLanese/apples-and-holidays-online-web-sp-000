@@ -99,6 +99,9 @@ def all_supplies_in_holidays(holiday_hash)
       supplyList.each do | supply |
         supplyName = supply.to_s
         supplyName = supplyName.capitalize
+        if (supplyName == "New_years")
+          supplyName = "New Years"
+        end
         nextPut += "#{supply}"
         if (i != maxIndex)
           nextPut += ", "
