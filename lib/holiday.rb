@@ -94,6 +94,7 @@ def all_supplies_in_holidays(holiday_hash)
       holidayNameStr = holidayName.to_s
       holidayNameStr = holidayNameStr.capitalize
       if (holidayNameStr.include?("_"))
+        nextPut += "  "
         holidayNameArray = holidayNameStr.split("_")
         maxHDNindex = holidayNameArray.length - 1
         i = 0
