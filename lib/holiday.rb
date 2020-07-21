@@ -85,7 +85,20 @@ def all_supplies_in_holidays(holiday_hash)
   # Summer:
   #   Fourth Of July: Fireworks, BBQ
   # etc.
-
+  holiday_hash.each do | season , holidayList |
+    puts "#{season}:"
+    holiday_hash[season].each do | holidayName , supplyList |
+      maxIndex = supplyList.length - 1
+      i = 0
+      print "\t#{holidayName}: "
+      supplyList.each do | supply |
+        print "#{supply}"
+        if (i != maxIndex)
+          print ", "
+        end
+      end
+    end
+  end
 end
 
 def all_holidays_with_bbq(holiday_hash)
