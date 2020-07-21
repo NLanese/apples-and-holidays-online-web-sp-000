@@ -104,6 +104,7 @@ def all_supplies_in_holidays(holiday_hash)
           nextPut += ", "
         end
       end
+      puts nextPut
     end
   end
 end
