@@ -106,7 +106,7 @@ def all_supplies_in_holidays(holiday_hash)
           if (i != maxHDNindex)
             nextPut += " "
           else
-            nextPut += ":"
+            nextPut += ": "
           end
           i = i + 1
         end
