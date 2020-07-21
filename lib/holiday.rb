@@ -142,7 +142,6 @@ def all_holidays_with_bbq(holiday_hash)
         return holidayArray[i]
         rArray << holidayArray[i]
       end
-      i = i + 1
     end
   end
 #return rArray
