@@ -132,7 +132,7 @@ def all_holidays_with_bbq(holiday_hash)
   # include the string "BBQ"
   rArray =[]
   holiday_hash.each do | season , holidayList |
-    holiday_hash[season].each do | holiday , supplyList | 
+    holiday_hash[season].each do | holiday , supplyList |
       passer = supplyList.any? do | supply |
         supply == "BBQ"
       end
