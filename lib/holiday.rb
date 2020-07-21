@@ -90,13 +90,18 @@ def all_supplies_in_holidays(holiday_hash)
     seasonName = seasonName.capitalize
     puts "#{seasonName}:"
     holiday_hash[season].each do | holidayName , supplyList |
+      nextPut = ""
       maxIndex = supplyList.length - 1
       i = 0
-      print "\t#{holidayName}: "
+      holidayNameStr = holidayName.to_s
+      holidayNameStr = holidayNameStr.capitalize
+      nextPut += "\t#{holidayNameStr}: "
       supplyList.each do | supply |
-        print "#{supply}"
+        supplyName = supply.to_s
+        supplyName = supplyName.capitalize
+        nextPut += "#{supply}"
         if (i != maxIndex)
-          print ", "
+          nextPut += ", "
         end
       end
     end
