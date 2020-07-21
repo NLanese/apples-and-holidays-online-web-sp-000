@@ -108,6 +108,7 @@ def all_supplies_in_holidays(holiday_hash)
           else
             nextPut += ":"
           end
+          i = i + 1
         end
       else
         nextPut += "  #{holidayNameStr}: "
