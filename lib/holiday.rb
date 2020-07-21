@@ -88,7 +88,7 @@ def all_supplies_in_holidays(holiday_hash)
   holiday_hash.each do | season , holidayList |
     seasonName = season.to_s
     seasonName = seasonName.capitalize
-    puts "#{season}:"
+    puts "#{seasonName}:"
     holiday_hash[season].each do | holidayName , supplyList |
       maxIndex = supplyList.length - 1
       i = 0
