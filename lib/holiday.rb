@@ -137,7 +137,7 @@ def all_holidays_with_bbq(holiday_hash)
         supply == "BBQ"
       end
       if (passer)
-        rArray << holiday_hash[season][holiday]
+        rArray << holiday_hash[season][holiday].keys
       end
     end
   end
