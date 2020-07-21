@@ -103,6 +103,7 @@ def all_supplies_in_holidays(holiday_hash)
         if (i != maxIndex)
           nextPut += ", "
         end
+        i = i + 1
       end
       puts nextPut
     end
