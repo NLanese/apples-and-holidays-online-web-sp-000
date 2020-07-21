@@ -95,7 +95,7 @@ def all_supplies_in_holidays(holiday_hash)
       i = 0
       holidayNameStr = holidayName.to_s
       holidayNameStr = holidayNameStr.capitalize
-      nextPut += "\t#{holidayNameStr}: "
+      nextPut += "/t#{holidayNameStr}: "
       supplyList.each do | supply |
         supplyName = supply.to_s
         supplyName = supplyName.capitalize
