@@ -91,11 +91,8 @@ def all_supplies_in_holidays(holiday_hash)
     puts "#{seasonName}:"
     holiday_hash[season].each do | holidayName , supplyList |
       nextPut = ""
-      maxIndex = supplyList.length - 1
-      i = 0
       holidayNameStr = holidayName.to_s
       holidayNameStr = holidayNameStr.capitalize
-
       if (holidayNameStr.include?("_"))
         holidayNameArray = holidayNameStr.split("_")
         maxHDNindex = holidayNameArray.length - 1
@@ -113,11 +110,13 @@ def all_supplies_in_holidays(holiday_hash)
       else
         nextPut += "  #{holidayNameStr}: "
       end
+      maxSupplyIndex = supplyList.length - 1
+      i = 0
       supplyList.each do | supply |
         supplyName = supply.to_s
         supplyName = supplyName.capitalize
         nextPut += "#{supply}"
-        if (i != maxIndex)
+        if (i < maxSupplyIndex)
           nextPut += ", "
         end
         i = i + 1
