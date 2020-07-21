@@ -104,7 +104,7 @@ def all_supplies_in_holidays(holiday_hash)
           word = word.capitalize
           nextPut += word
           if (i != maxHDNindex)
-            nextPut += ", "
+            nextPut += " "
           else
             nextPut += ":"
           end
